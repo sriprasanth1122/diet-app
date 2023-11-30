@@ -100,7 +100,7 @@ function CreateCategory() {
             <AdminMenu />
           </div>
           <div className=" col-md-7">
-            <h1>Manage Catogory</h1>
+            <h1>Manage Category</h1>
             <div className="p-3 w-75">
               <CategoryForm
                 handleSubmit={handleSubmit}

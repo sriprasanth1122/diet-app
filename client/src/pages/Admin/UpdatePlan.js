@@ -37,7 +37,7 @@ function UpdatePlan() {
     //eslint-disable-next-line
   }, []);
 
-  //Get all catogory
+  //Get all category
   const getAllPlan = async () => {
     try {
       const { data } = await axios.get("http://localhost:8080/api/v1/category/get-category");
