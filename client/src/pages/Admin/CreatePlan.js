@@ -20,7 +20,7 @@ function CreatePlan() {
   //Get all category
   const getAllPlan = async () => {
     try {
-      const { data } = await axios.get("http://localhost:8080/api/v1/category/get-category");
+      const { data } = await axios.get("https://diet-app-jnz3.onrender.com/api/v1/category/get-category");
       if (data?.success) {
         setCategories(data?.category);
       }
@@ -44,7 +44,7 @@ function CreatePlan() {
       planData.append("description", description);
       planData.append("sampleimage", sampleimage);
       planData.append("category", category);
-      const { data } = axios.post("http://localhost:8080/api/v1/plan/create-plan", planData);
+      const { data } = axios.post("https://diet-app-jnz3.onrender.com/api/v1/plan/create-plan", planData);
       if (data?.success) {
         toast.error(data?.message);
       } else {

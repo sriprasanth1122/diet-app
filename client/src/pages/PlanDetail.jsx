@@ -15,7 +15,7 @@ function PlanDetail() {
     const getPlanDetail = async() => {
         try {
           setLoading(true)
-            const {data} = await axios.get(`http://localhost:8080/api/v1/plan/get-plan/${params.slug}`)
+            const {data} = await axios.get(`https://diet-app-jnz3.onrender.com/api/v1/plan/get-plan/${params.slug}`)
            
             setPlan(data?.plan)
             setLoading(false)
@@ -40,7 +40,7 @@ function PlanDetail() {
     
     <div className='row container mt-4'>
         <div className='col-md-6 my-5'>
-            <img className='img-fluid rounded-3 m-3' src={`http://localhost:8080/api/v1/plan/plan-sampleimage/${plan._id}`} alt={plan.name}/>
+            <img className='img-fluid rounded-3 m-3' src={`https://diet-app-jnz3.onrender.com/api/v1/plan/plan-sampleimage/${plan._id}`} alt={plan.name}/>
 
         </div>
         <div className='col-md-6 text-center '>

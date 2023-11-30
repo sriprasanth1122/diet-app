@@ -12,7 +12,7 @@ const Plans = () => {
   //getallplans
   const getAllPlans = async () => {
     try {
-      const { data } = await axios.get("http://localhost:8080/api/v1/plan/get-plan");
+      const { data } = await axios.get("https://diet-app-jnz3.onrender.com/api/v1/plan/get-plan");
       setPlan(data.plan);
     } catch (error) {
       console.log(error);
@@ -41,7 +41,7 @@ const Plans = () => {
               >
                 <div className="card m-2 rounded-2" style={{ width: "30rem",height:'auto'  }}>
                   <img
-                    src={`http://localhost:8080/api/v1/plan/plan-sampleimage/${p._id}`}
+                    src={`https://diet-app-jnz3.onrender.com/api/v1/plan/plan-sampleimage/${p._id}`}
                     alt={p.name}
                     className="border-1 p-2 rounded-0 img-fluid"
                     style={{ width: "14rem",height:'10rem'  }}

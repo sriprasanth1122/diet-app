@@ -46,7 +46,7 @@ const CartPage = () => {
               <div className="row card flex-row m-3 mb-5 rounded-4" key={p._id}>
                 <div className="col-md-5">
                   <img
-                    src={`http://localhost:8080/api/v1/plan/plan-sampleimage/${p._id}`}
+                    src={`https://diet-app-jnz3.onrender.com/api/v1/plan/plan-sampleimage/${p._id}`}
                     alt={p.name}
                     className=" p-4 rounded-0 img-fluid "
                     style={{ width: "30rem", height: "20rem" }}
